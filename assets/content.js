@@ -2,7 +2,7 @@
 // Leave collections empty until you have work to share. Examples are in README.md.
 window.PORTFOLIO = {
   email: 'naynamsultania4@gmail.com',
-  githubUrl: 'https://github.com/naynamsultania4-spec',
+  githubUrl: 'https://github.com/naynamsultania',
   googleAnalyticsId: '', // Your own G-... measurement ID; empty disables all analytics.
   projects: [],
   certificates: []
