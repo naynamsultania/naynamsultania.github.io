@@ -4,7 +4,7 @@ Personal portfolio of a JEE 2027 aspirant and aspiring software engineer from Ra
 
 ## Website
 
-This repository is prepared for GitHub Pages at `https://naynamsultania4-spec.github.io/`.
+This repository is prepared for GitHub Pages at `https://naynamsultania.github.io/`.
 
 - Home, About, Projects, Certificates and Contact pages
 - Responsive layouts, light/dark themes and reduced-motion support
