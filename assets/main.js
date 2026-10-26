@@ -157,8 +157,15 @@
     });
   }
 
-  if(safeURL(config.githubUrl)) {
-    const github=link('GitHub',safeURL(config.githubUrl)); github.className='footer-email'; $('.footer-top').append(github);
+  const footerGitHub = $('[data-footer-github]');
+  if (footerGitHub) {
+    const githubURL = safeURL(config.githubUrl);
+    footerGitHub.hidden = !githubURL;
+    if (githubURL) {
+      footerGitHub.href = githubURL;
+      const handle = new URL(githubURL).pathname.replace(/^\/|\/$/g, '');
+      footerGitHub.querySelector('.footer-link-detail').textContent = handle ? `@${handle}` : 'View profile';
+    }
   }
   // No requests are made unless a real measurement ID is configured and the visitor opts in.
   const analyticsID = /^G-[A-Z0-9]+$/.test(config.googleAnalyticsId || '') ? config.googleAnalyticsId : '';
